@@ -1,0 +1,38 @@
+Start testing: Apr 03 16:02 CDT
+----------------------------------------------------------
+1/1 Testing: CompressorTests
+1/1 Test: CompressorTests
+Command: "/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/test/compressortest"
+Directory: /Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/test
+"CompressorTests" start time: Apr 03 16:02 CDT
+Output:
+----------------------------------------------------------
+[==========] Running 3 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from ExampleTest
+[ RUN      ] ExampleTest.Sample
+[       OK ] ExampleTest.Sample (0 ms)
+[----------] 1 test from ExampleTest (0 ms total)
+
+[----------] 1 test from TestFileHandelr
+[ RUN      ] TestFileHandelr.TestReadFile
+[       OK ] TestFileHandelr.TestReadFile (1 ms)
+[----------] 1 test from TestFileHandelr (1 ms total)
+
+[----------] 1 test from TestHuffmanTree
+[ RUN      ] TestHuffmanTree.TestNodesByFreq
+[       OK ] TestHuffmanTree.TestNodesByFreq (0 ms)
+[----------] 1 test from TestHuffmanTree (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 3 test suites ran. (1 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.44 sec
+----------------------------------------------------------
+Test Passed.
+"CompressorTests" end time: Apr 03 16:02 CDT
+"CompressorTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 03 16:02 CDT

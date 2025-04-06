@@ -1,0 +1,8 @@
+/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/CMakeFiles/compressor.dir
+/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/CMakeFiles/test.dir
+/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/CMakeFiles/edit_cache.dir
+/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/CMakeFiles/rebuild_cache.dir
+/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/test/CMakeFiles/compressortest.dir
+/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/test/CMakeFiles/test.dir
+/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/test/CMakeFiles/edit_cache.dir
+/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/test/CMakeFiles/rebuild_cache.dir

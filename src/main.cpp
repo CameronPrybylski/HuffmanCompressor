@@ -6,12 +6,67 @@
 
 using namespace std;
 
+class App{
+
+private:
+    HuffmanCompressor* hc;
+
+public:
+
+    App(){
+        hc = new HuffmanCompressor();
+    }
+    ~App(){
+        delete hc;
+    }
+
+    void welcomeScreen(){
+        cout << "Welcome to the Huffman Compressor" << endl;
+        cout << "What would you like to do?" << endl;
+        cout << "1. Compress File" << endl;
+        cout << "2. Decompress File" << endl;
+        string choice;
+        cin >> choice;
+        if(choice == "1"){
+            compress();
+        }else if(choice == "2"){
+            decompress();
+        }else{
+            cout << "Incorrect choice" << endl;
+        }
+    }
+
+    void compress(){
+        cout << "Make sure your input file is in the input directory" << endl;
+        cout << "What is the filename?" << endl;
+        string filename;
+        cin >> filename;
+        hc->compressFile("../input/" + filename);
+        cout << "Compressed file is in output directory" << endl;
+    }
+
+    void decompress(){
+        cout << "Do you have the huffman tree?(y/n)" << endl;
+        string choice;
+        cin >> choice;
+        if(choice == "y"){
+
+        }else if("n"){
+            hc->decompressFile("../output/output.bin", "../output/output.txt");
+            cout << "Decompressed file has been added to output directory" << endl;
+        }else{
+            cout << "Enter y or n" << endl;
+        }
+    }
+};
+
 int main(){
    
-    HuffmanCompressor hc;
-    hc.compressFile("../input/example.txt");
-    hc.decompressFile("../output/output.bin", "../output/output.txt");
+    App* app = new App();
+    while (true)
+    {
+        app->welcomeScreen();
+    }
     
-
     return 0;
 }

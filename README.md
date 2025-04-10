@@ -1,3 +1,3 @@
-// Run this from build directory \n
+// Run this from build directory
 cmake --build .
 ./compressor

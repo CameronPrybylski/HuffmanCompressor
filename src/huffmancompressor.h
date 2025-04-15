@@ -12,11 +12,17 @@ private:
     std::string filename;
 
 public:
-    HuffmanCompressor() {}
+    HuffmanCompressor() : huffmanTree(nullptr), fileHandler(nullptr) {}
+    ~HuffmanCompressor() {
+        delete huffmanTree;
+        delete fileHandler;
+    }
     void setHuffmanTree();
     void encodeHuffman();
     void compressFile(std::string filename) override;
     void decompressFile(std::string binaryfile, std::string outputfile) override;
+    void writeHuffmanTree(std::string filename);
+    void readHuffmanTree(std::string filename);
 };
 
 

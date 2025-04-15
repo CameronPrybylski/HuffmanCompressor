@@ -5,6 +5,7 @@
 #include<unordered_map>
 #include<queue>
 #include<string>
+#include<vector>
 
 class HuffmanTree{
 
@@ -16,6 +17,10 @@ private:
 
 public:
     HuffmanTree(std::unordered_map<char, int> freqMap) : root(nullptr), freqMap(freqMap) {}
+    HuffmanTree() : root(nullptr) {}
+    ~HuffmanTree(){
+        delete root;
+    }
     void setNodesByFreq();
     std::priority_queue<Node*, std::vector<Node*>, Compare> getNodesByFreq();
     void buildTree();
@@ -24,6 +29,12 @@ public:
     void setHuffmanCodes();
     std::unordered_map<char, std::string> getHuffmanCodes();
     Node* getRoot();
+    void preOrderString(std::string& huffman, Node* curr);
+    std::string toString();
+    void setRoot(Node* root);
+    std::vector<std::string> huffmanToVector(std::string huffman);
+    Node* deserializeHuffman(std::vector<std::string>& huffmanV, int& i);
+    void setHuffmanTree(std::string huffman);
 
 };
 

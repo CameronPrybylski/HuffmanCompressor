@@ -43,3 +43,18 @@ void HuffmanCompressor::decompressFile(string binaryfile, string outputfile){
     fileHandler->writeFile(decodedString, outputfile);
 }
 
+void HuffmanCompressor::writeHuffmanTree(string filename){
+    string huffmanTreeString = huffmanTree->toString();
+    fileHandler->writeHuffmanTree(filename, huffmanTreeString);
+}
+
+void HuffmanCompressor::readHuffmanTree(string filename){
+    if(fileHandler == nullptr){
+        fileHandler = new FileHandler();
+    }
+    if(huffmanTree == nullptr){
+        huffmanTree = new HuffmanTree();
+    }
+    string huffman = fileHandler->readHuffmanTree(filename);
+    huffmanTree->setHuffmanTree(huffman);
+}

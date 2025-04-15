@@ -132,7 +132,6 @@ Node* HuffmanTree::deserializeHuffman(vector<string>& huffmanV, int& i){
     }
 
     string token = huffmanV[i];
-    cout << "Token: " << token << "\n";
     i++;
 
     if(token == "1"){
@@ -141,7 +140,6 @@ Node* HuffmanTree::deserializeHuffman(vector<string>& huffmanV, int& i){
             return nullptr;
         }
         char ch = huffmanV[i][0];
-        cout << "Char: " << ch << "\n";
         i++;
 
         int freq;
@@ -151,7 +149,6 @@ Node* HuffmanTree::deserializeHuffman(vector<string>& huffmanV, int& i){
             cerr << "\nError: Invalid frequency value at index " << i << ": " << huffmanV[i] << "\n";
             return nullptr;
         }
-        cout << "Freq: " << freq << "\n";
         i++;
 
         return new Node(ch, freq);
@@ -175,7 +172,5 @@ void HuffmanTree::setHuffmanTree(string huffman){
     if(root != nullptr){    
         deleteTree(root);
     }
-    cout << "Why isn't this working 1" << endl;
     setRoot(newRoot);
-    cout << "Why isn't this working 2" << endl;
 }

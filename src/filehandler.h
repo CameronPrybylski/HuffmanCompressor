@@ -13,5 +13,7 @@ public:
     std::string getInput(std::string filename);
     void writeBinaryFile(std::string encodedBits, std::string filename);
     std::string readBinaryFile(std::string filename);
+    void writeHuffmanTree(std::string filename, std::string huffman);
+    std::string readHuffmanTree(std::string filename);
 };
 #endif

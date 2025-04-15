@@ -118,3 +118,29 @@ string FileHandler::readBinaryFile(string filename){
 
     return bitString;
 }
+
+
+void FileHandler::writeHuffmanTree(string filename, string huffman){
+    ofstream file(filename);
+    if(!file.is_open()){
+        cerr << "Could not open file";
+    }
+    for(int i = 0; i < huffman.length(); i++){
+        file << huffman[i];
+    }
+    file.close();
+}
+
+string FileHandler::readHuffmanTree(string filename){
+    ifstream file(filename);
+    if(!file.is_open()){
+        cerr << "Could not open file" << endl;
+    }
+    string line;
+    string huffmanTree;
+    while(getline(file, line)){
+        huffmanTree += line;
+    }
+    file.close();
+    return huffmanTree;
+}

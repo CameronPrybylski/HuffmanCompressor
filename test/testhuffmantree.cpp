@@ -6,7 +6,7 @@ using namespace std;
 
 TEST(TestHuffmanTree, TestNodesByFreq){
     FileHandler fh;
-    unordered_map<char, int> freqMap = fh.readFile("/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/test/testFile.txt");
+    unordered_map<char, int> freqMap = fh.readFile("/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/test/testInputFile.txt");
     HuffmanTree ht(freqMap);
 
     ht.setNodesByFreq();

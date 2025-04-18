@@ -1,7 +1,3 @@
-Certainly! Here's a comprehensive `README.md` for your Huffman Compressor project, designed to provide clear guidance to users and contributors:
-
----
-
 # HuffmanCompressor
 
 A C++ implementation of Huffman encoding and decoding for efficient file compression and decompression.

@@ -11,6 +11,7 @@ public:
     std::unordered_map<char, int> readFile(std::string fileName);
     void writeFile(std::string decodedString, std::string filename);
     std::string getInput(std::string filename);
+    void writeBinaryFile(std::string encodedBits);
     void writeBinaryFile(std::string encodedBits, std::string filename);
     std::string readBinaryFile(std::string filename);
     void writeHuffmanTree(std::string filename, std::string huffman);

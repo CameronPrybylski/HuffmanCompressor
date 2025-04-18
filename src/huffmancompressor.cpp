@@ -16,7 +16,7 @@ void HuffmanCompressor::encodeHuffman(){
     for(char c : input){
         encodedBits += huffmanCodes[c];
     }
-    fileHandler->writeBinaryFile(encodedBits, filename);
+    fileHandler->writeBinaryFile(encodedBits);
 }
 
 void HuffmanCompressor::compressFile(string filename) {

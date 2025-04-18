@@ -1,25 +1,31 @@
-Start testing: Apr 16 12:50 CDT
+Start testing: Apr 18 13:08 CDT
 ----------------------------------------------------------
 1/1 Testing: CompressorTests
 1/1 Test: CompressorTests
 Command: "/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/test/compressortest"
 Directory: /Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/test
-"CompressorTests" start time: Apr 16 12:50 CDT
+"CompressorTests" start time: Apr 18 13:08 CDT
 Output:
 ----------------------------------------------------------
-[==========] Running 4 tests from 3 test suites.
+[==========] Running 7 tests from 3 test suites.
 [----------] Global test environment set-up.
 [----------] 1 test from ExampleTest
 [ RUN      ] ExampleTest.Sample
 [       OK ] ExampleTest.Sample (0 ms)
 [----------] 1 test from ExampleTest (0 ms total)
 
-[----------] 2 tests from TestFileHandler
+[----------] 5 tests from TestFileHandler
 [ RUN      ] TestFileHandler.TestReadFile
 [       OK ] TestFileHandler.TestReadFile (0 ms)
 [ RUN      ] TestFileHandler.TestWriteFile
-[       OK ] TestFileHandler.TestWriteFile (2 ms)
-[----------] 2 tests from TestFileHandler (3 ms total)
+[       OK ] TestFileHandler.TestWriteFile (1 ms)
+[ RUN      ] TestFileHandler.TestGetInput
+[       OK ] TestFileHandler.TestGetInput (0 ms)
+[ RUN      ] TestFileHandler.TestReadWriteBinaryFile
+[       OK ] TestFileHandler.TestReadWriteBinaryFile (0 ms)
+[ RUN      ] TestFileHandler.TestReadWriteHuffmanTree
+[       OK ] TestFileHandler.TestReadWriteHuffmanTree (1 ms)
+[----------] 5 tests from TestFileHandler (3 ms total)
 
 [----------] 1 test from TestHuffmanTree
 [ RUN      ] TestHuffmanTree.TestNodesByFreq
@@ -27,14 +33,14 @@ Output:
 [----------] 1 test from TestHuffmanTree (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 3 test suites ran. (3 ms total)
-[  PASSED  ] 4 tests.
+[==========] 7 tests from 3 test suites ran. (3 ms total)
+[  PASSED  ] 7 tests.
 <end of output>
-Test time =   0.37 sec
+Test time =   0.36 sec
 ----------------------------------------------------------
 Test Passed.
-"CompressorTests" end time: Apr 16 12:50 CDT
+"CompressorTests" end time: Apr 18 13:08 CDT
 "CompressorTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Apr 16 12:50 CDT
+End testing: Apr 18 13:08 CDT

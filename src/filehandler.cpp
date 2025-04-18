@@ -71,9 +71,13 @@ string FileHandler::getInput(string filename){
     return content;
 }
 
-void FileHandler::writeBinaryFile(string encodedBits, string filename){
-    //string binaryString = encodedBits;
+void FileHandler::writeBinaryFile(string encodedBits){
     string binFileName = "../output/output.bin";
+    writeBinaryFile(encodedBits, binFileName);
+    
+}
+
+void FileHandler::writeBinaryFile(string encodedBits, string binFileName){
     std::ofstream out(binFileName, std::ios::binary);
 
     // Write the number of valid bits in the last byte as a header (1 byte)

@@ -10,7 +10,7 @@ TEST(ExampleTest, Sample) {
 
 TEST(TestFileHandler, TestReadFile){
     FileHandler fh;
-    unordered_map<char, int> freqMap = fh.readFile("/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/test/testInputFile.txt");
+    unordered_map<char, int> freqMap = fh.readFile("/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/test/testFiles/testInputFile.txt");
     
     EXPECT_EQ(freqMap['H'], 1);
     EXPECT_EQ(freqMap['e'], 1);
@@ -21,7 +21,7 @@ TEST(TestFileHandler, TestReadFile){
 
 TEST(TestFileHandler, TestWriteFile){
     string output = "This is the output.";
-    string filename = "/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/test/testOutputFile.txt";
+    string filename = "/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/test/testFiles/testOutputFile.txt";
     FileHandler fh;
     fh.writeFile(output, filename);
     ifstream file(filename);
@@ -36,7 +36,7 @@ TEST(TestFileHandler, TestWriteFile){
 
 TEST(TestFileHandler, TestGetInput){
     FileHandler fh;
-    string filename = "/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/test/testGetInput.txt";
+    string filename = "/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/test/testFiles/testGetInput.txt";
     string content = fh.getInput(filename);
     string expected = "Hello my name is Cameron~What's your name?~";
     EXPECT_EQ(content.length(), expected.length());

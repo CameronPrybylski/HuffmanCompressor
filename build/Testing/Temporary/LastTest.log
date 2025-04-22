@@ -1,13 +1,13 @@
-Start testing: Apr 18 13:08 CDT
+Start testing: Apr 21 17:48 CDT
 ----------------------------------------------------------
 1/1 Testing: CompressorTests
 1/1 Test: CompressorTests
 Command: "/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/test/compressortest"
 Directory: /Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/build/test
-"CompressorTests" start time: Apr 18 13:08 CDT
+"CompressorTests" start time: Apr 21 17:48 CDT
 Output:
 ----------------------------------------------------------
-[==========] Running 7 tests from 3 test suites.
+[==========] Running 8 tests from 3 test suites.
 [----------] Global test environment set-up.
 [----------] 1 test from ExampleTest
 [ RUN      ] ExampleTest.Sample
@@ -16,31 +16,33 @@ Output:
 
 [----------] 5 tests from TestFileHandler
 [ RUN      ] TestFileHandler.TestReadFile
-[       OK ] TestFileHandler.TestReadFile (0 ms)
+[       OK ] TestFileHandler.TestReadFile (6 ms)
 [ RUN      ] TestFileHandler.TestWriteFile
-[       OK ] TestFileHandler.TestWriteFile (1 ms)
+[       OK ] TestFileHandler.TestWriteFile (5 ms)
 [ RUN      ] TestFileHandler.TestGetInput
-[       OK ] TestFileHandler.TestGetInput (0 ms)
+[       OK ] TestFileHandler.TestGetInput (3 ms)
 [ RUN      ] TestFileHandler.TestReadWriteBinaryFile
-[       OK ] TestFileHandler.TestReadWriteBinaryFile (0 ms)
+[       OK ] TestFileHandler.TestReadWriteBinaryFile (1 ms)
 [ RUN      ] TestFileHandler.TestReadWriteHuffmanTree
-[       OK ] TestFileHandler.TestReadWriteHuffmanTree (1 ms)
-[----------] 5 tests from TestFileHandler (3 ms total)
+[       OK ] TestFileHandler.TestReadWriteHuffmanTree (3 ms)
+[----------] 5 tests from TestFileHandler (20 ms total)
 
-[----------] 1 test from TestHuffmanTree
+[----------] 2 tests from TestHuffmanTree
 [ RUN      ] TestHuffmanTree.TestNodesByFreq
 [       OK ] TestHuffmanTree.TestNodesByFreq (0 ms)
-[----------] 1 test from TestHuffmanTree (0 ms total)
+[ RUN      ] TestHuffmanTree.TestBuildTree
+[       OK ] TestHuffmanTree.TestBuildTree (0 ms)
+[----------] 2 tests from TestHuffmanTree (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 7 tests from 3 test suites ran. (3 ms total)
-[  PASSED  ] 7 tests.
+[==========] 8 tests from 3 test suites ran. (20 ms total)
+[  PASSED  ] 8 tests.
 <end of output>
-Test time =   0.36 sec
+Test time =   0.88 sec
 ----------------------------------------------------------
 Test Passed.
-"CompressorTests" end time: Apr 18 13:08 CDT
+"CompressorTests" end time: Apr 21 17:48 CDT
 "CompressorTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Apr 18 13:08 CDT
+End testing: Apr 21 17:48 CDT

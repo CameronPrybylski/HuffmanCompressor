@@ -1,2 +1,2 @@
-CompressorTests 13 0.0279944
+CompressorTests 15 0.0586894
 ---

@@ -6,7 +6,7 @@ using namespace std;
 
 TEST(TestHuffmanTree, TestNodesByFreq){
     FileHandler fh;
-    unordered_map<char, int> freqMap = fh.readFile("/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/test/testInputFile.txt");
+    unordered_map<char, int> freqMap = fh.readFile("/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/test/testFiles/testInputFile.txt");
     HuffmanTree ht(freqMap);
 
     ht.setNodesByFreq();
@@ -20,6 +20,33 @@ TEST(TestHuffmanTree, TestNodesByFreq){
         prev = curr;
     }
 
+}
+
+TEST(TestHuffmanTree, TestBuildTree){
+    FileHandler fh;
+    unordered_map<char, int> freqMap = fh.readFile("/Users/cameronprzybylski/Documents/C++/C++ Projects/FileCompressor/test/testFiles/testInputFile.txt");
+    HuffmanTree ht(freqMap);
+    ht.setNodesByFreq();
+    ht.buildTree();
+    Node* curr = ht.getRoot();
+    queue<Node*> queue;
+    queue.push(curr);
+    while(!queue.empty()){
+        Node* node = queue.front();
+        queue.pop();
+        if(node->isLeaf()){
+            EXPECT_NE(node->ch, '*');
+        }else{
+            EXPECT_EQ(node->ch, '*');
+        }
+        if(node->left != nullptr){
+            queue.push(node->left);
+        }
+        if(node->right != nullptr){
+            queue.push(node->right);
+        }
+        
+    }
 }
 
 
